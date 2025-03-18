@@ -1,6 +1,28 @@
 [package]
-name = "Daemon_Base"
-version = "0.1.0"
+name = "daemon-base"
+version = "0.1.1"
 edition = "2021"
+authors = ["James Gober <contact@jamesgober.com>"]
+description = "A flexible and configurable Rust daemon library with lifecycle management, logging, callbacks, and optional async support. Works on Linux, macOS, and Windows."
+license = "Apache-2.0"
+repository = "https://github.com/jamesgober/daemon-base"
+keywords = ["daemon", "rust", "async", "lifecycle", "process", "background", "systemd", "logging", "configurable", "cross-platform", "service", "manager", "process-control", "tokio", "multithreading"]
+categories = ["asynchronous", "development-tools", "os", "config"]
+readme = "README.md"
+documentation = "https://docs.rs/daemon-base"
 
+# Add dependencies here
 [dependencies]
+tokio = { version = "1.0", features = ["full"], optional = true } # For async support
+log = "0.4"
+log4rs = "1.2.0"
+serde = { version = "1.0", features = ["derive"] } # For configuration serialization
+serde_json = "1.0" # For JSON configuration files
+thiserror = "1.0" # For error handling
+
+[features]
+default = []
+async = ["tokio"] # Optional async support
+
+[dev-dependencies]
+env_logger = "0.9"

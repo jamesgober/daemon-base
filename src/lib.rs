@@ -1,14 +1,16 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+//! A flexible and configurable daemon library for Rust.
+//!
+//! This library provides a daemon (background service) that can be easily integrated into
+//! various projects. It supports both synchronous and asynchronous operations, lifecycle
+//! callbacks, and configuration management.
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+pub mod core;
+pub mod config;
+pub mod error;
+pub mod logging;
+pub mod binary; // Binary management module
+pub mod concurrency; // Concurrency models module
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub use core::{Daemon, DaemonState};
+pub use config::DaemonConfig;
+pub use error::DaemonError;
