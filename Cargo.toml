@@ -26,3 +26,6 @@ async = ["tokio"] # Optional async support
 
 [dev-dependencies]
 env_logger = "0.9"
+
+[package.metadata.docs.rs]
+all-features = true # Build documentation with all features enabled
