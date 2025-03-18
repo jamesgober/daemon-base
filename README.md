@@ -1,12 +1,12 @@
-<h1 align="center">
-    Daemon Library
-</h1>
+<h1 align="center">DAEMON<br><sup>RUST LIBRARY</sup></h1>
 
 <p align="center">
     <a href="https://crates.io/crates/daemon-base"><img alt="Crates.io" src="https://img.shields.io/crates/v/daemon-base"></a>
+    <img alt="docs.rs" src="https://img.shields.io/docsrs/daemon-base">
+<a href="https://crates.io/crates/daemon-base">
+    <img alt="Crates.io Downloads" src="https://img.shields.io/crates/d/daemon-base"></a>
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/jamesgober/daemon-base?color=%23347d39" alt="last commit badge">
     <img alt="GitHub" src="https://img.shields.io/github/license/jamesgober/daemon-base">
-    <img alt="docs.rs" src="https://img.shields.io/docsrs/daemon-base">
 </p>
 
 **Daemon Base** is a flexible and configurable Rust daemon library for managing background services. It supports lifecycle management, logging, callbacks, and optional async execution. Designed for cross-platform use, it runs on Linux, macOS, and Windows, making it ideal for system services, background tasks, and process management.
