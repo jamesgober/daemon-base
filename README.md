@@ -9,6 +9,8 @@
     <img alt="GitHub" src="https://img.shields.io/github/license/jamesgober/daemon-base">
 </p>
 
+> **No longer maintained.** daemon-base has been replaced by [proc-daemon](https://github.com/jamesgober/proc-daemon) ([crates.io](https://crates.io/crates/proc-daemon)), which covers the same ground with signal handling, graceful shutdown, subsystem lifecycle and hot-reload config. New projects should use proc-daemon. The 0.1.x releases stay on crates.io so existing builds keep working.
+
 **Daemon Base** is a flexible and configurable Rust daemon library for managing background services. It supports lifecycle management, logging, callbacks, and optional async execution. Designed for cross-platform use, it runs on Linux, macOS, and Windows, making it ideal for system services, background tasks, and process management.
 
 
